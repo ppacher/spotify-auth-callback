@@ -1,11 +1,13 @@
 <html>
     <head>
-    </head>
-    <body>
         <script language="javascript">
-            var urlParams = new URLSearchParams(window.location.search);
-            document.getElementById("code").value = urlParams.get("code");
+            function displayCode() {
+                var urlParams = new URLSearchParams(window.location.search);
+                document.getElementById("code").value = urlParams.get("code");
+            }
         </script>
+    </head>
+    <body onload="displayCode()">
         <input type="text" readonly disabled id="code">
     </body>
 </html>
