@@ -1,0 +1,11 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script language="javascript">
+            var urlParams = new URLSearchParams(window.location.search);
+            document.getElementById("code").value = urlParams.get("code");
+        </script>
+        <input type="text" readonly disabled id="code">
+    </body>
+</html>
